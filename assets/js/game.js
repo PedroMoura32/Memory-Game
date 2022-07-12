@@ -1,16 +1,16 @@
 const grid = document.querySelector('.grid')
 
 const characters = [
-    'beth',
-    'jerry',
-    'jessica',
-    'morty',
-    'pessoa-passaro',
-    'pickle-rick',
-    'rick',
-    'summer',
-    'meeseeks',
-    'scroopy',
+    'abacaxi',
+    'banana3',
+    'coco',
+    'kiwi',
+    'laranja',
+    'maca2',
+    'mamao',
+    'melancia',
+    'morango',
+    'uva',
 ]
 
 const createElement = (tag, className) => {
@@ -86,7 +86,7 @@ const createCard = (character) => {
     const front = createElement('div', 'face front')
     const back = createElement('div', 'face back')
 
-    front.style.backgroundImage = `url('../img/${character}.png')`
+    front.style.backgroundImage = `url('../img2/${character}.png')`
 
     card.appendChild(front)
     card.appendChild(back)
