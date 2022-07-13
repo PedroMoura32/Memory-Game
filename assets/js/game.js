@@ -1,4 +1,5 @@
 const grid = document.querySelector('.grid')
+const titleGame = document.querySelector('.title-game')
 
 const characters = [
     'abacaxi',
@@ -27,7 +28,9 @@ const checkEndGame = () => {
 
     if (disableCards.length === 20) {
         setTimeout(() => {
-            alert('Parabéns, você conseguiu!!!')
+            titleGame.innerHTML = 'PARABÉNS!!!'
+            titleGame.style.color = 'red'
+
         }, 500)
     }
 }
